@@ -8,12 +8,15 @@ skip-lint = false
 [programs.localnet]
 simple_billing_magicblock = "6ZK6M6LY5h5V1RHKfHXgii8WiZgeCBQ7uB5DACngm7ht"
 
+[programs.devnet]
+simple_billing_magicblock = "6ZK6M6LY5h5V1RHKfHXgii8WiZgeCBQ7uB5DACngm7ht"
+
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]
-test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/simple-billing-magicblock.ts"

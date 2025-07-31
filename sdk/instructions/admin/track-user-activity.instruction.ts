@@ -6,7 +6,6 @@ interface TrackUserActivityAccounts {
   operator: PublicKey;
   user: PublicKey;
   userVault: PublicKey;
-  indexer: PublicKey | null;
 }
 
 interface TrackUserActivityParams {
